@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Form Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .container{
+                width:35%;
+                border: 2px solid black;
+                margin: auto;
+                padding: 18px;
+                
+            }
+            #myform table tr td input{
+                font-size: 27px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" id="myform">
+        <h1>Form</h1>
+        <form action="RegisterServlet" method="post">
+            <table>
+                <tr>
+                <td>Enter Your Name:</td>
+                <td><input type="text" name="user_name" placeholder="Enter here"/></td>
+                </tr>
+                
+                <tr>
+                <td>Enter your password:</td>
+                <td><input type="text" name="userpassword" placeholder="Enter here"/></td>
+                </tr>
+                
+                <tr>
+                <td>Enter your Email:</td>
+                <td><input type="text" name="useremail" placeholder="Enter here"/></td>
+                </tr>
+                
+                <tr>
+                <td>Select gender:</td>
+                <td><input type="radio" name="usergender" value="male"> Male &nbsp;&nbsp;<input type="radio" name="usergender" value=female>Female</td>
+                </tr>
+                
+                <tr>
+                    <td>select your course:</td>
+                    <td>
+                        <select name="usercourse">
+                            <option value="Java">Java</option>
+                            <option value="Php">Php</option>
+                            <option value="Python">Python</option>
+                            <option value="Android">Android</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: right">
+                        <input type="checkbox" value="checked" name="condition"/>
+                    </td>
+                    <td>Agree terms and condition</td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        <button type="submit">Register</button>
+                        <button type="Reset">Reset</button>
+                    </td>
+                </tr>
+                
+            </table>
+        </form>
+        </div>
+    </body>
+</html>

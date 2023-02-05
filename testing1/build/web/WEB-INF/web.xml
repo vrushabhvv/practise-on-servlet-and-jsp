@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	 version="3.1">
+    
+    
+    <!--servlet declaration-->
+    <servlet>
+        <servlet-name>first</servlet-name>
+        <servlet-class>com.servlets.firstservlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>second</servlet-name>
+        <servlet-class>com.servlets.secondservlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>third</servlet-name>
+        <servlet-class>com.servlets.thirdservlet</servlet-class>
+    </servlet>
+    
+    <!--mapping-->
+    <!--when we fire /web in browser then it will search name for that servlet and after class of that servlet-->
+    <!--this declaration and mapping are important part while creating a servlet-->
+    <servlet-mapping>
+        <servlet-name>first</servlet-name>
+        <url-pattern>/web</url-pattern>
+    </servlet-mapping>
+    
+     <servlet-mapping>
+        <servlet-name>second</servlet-name>
+        <url-pattern>/second</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>third</servlet-name>
+        <url-pattern>/third</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
